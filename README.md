@@ -36,7 +36,6 @@ h{[:year, :month, :day, :hour, :minute, :second]}
 
 + MRI ~> 2.1
 + rubinius ~> 3.15
-+ JRuby ~> 9.0.0.0
 
 This gem uses Binding#local_variable_get, makes MRI < 2.1 and rubinius < 3.15 lack of support.
 Using eval may solve the problem, but evaling an user passed string may cause problems.
