@@ -30,6 +30,17 @@ Then you can build like this:
 h{[:year, :month, :day, :hour, :minute, :second]}
 ```
 
+## Installation
+
+Install the gem
+```sh
+gem install simple_hash
+```
+or require it in your Gemfile
+```Ruby
+gem 'simple_hash'
+```
+
 ## Development
 
 Test:
