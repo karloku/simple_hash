@@ -1,4 +1,6 @@
 ## SimpleHash
+[![Gem Version](https://badge.fury.io/rb/simple_hash.svg)](https://badge.fury.io/rb/simple_hash)
+[![Build Status](https://travis-ci.org/karloku/simple_hash.svg?branch=master)](https://travis-ci.org/karloku/simple_hash)
 
 Brings ES6 object initializer sugar to Ruby.
 
