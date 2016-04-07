@@ -31,7 +31,7 @@ module SimpleHash
 
   # Adds #h method to Object, delegating to SimpleHash::h
   def self.short_cut!
-    Object.include(SimpleHash)
+    TOPLEVEL_BINDING.eval 'include SimpleHash'
   end
 end
 
