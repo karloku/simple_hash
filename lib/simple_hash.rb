@@ -22,11 +22,9 @@ module SimpleHash
   # @return [Hash] hash with passed-in keys, e.g. {key1: 'key1_value', key2: 'key2_value', ...}
   def h(&list_block)
     variables = yield.map(&:to_s)
-    Hash[
-      variables.map do |variable|
-        [variable.to_sym, list_block.binding.local_variable_get(variable)]
-      end
-    ]
+    Hash.[](variables.map do |variable|
+              [variable.to_sym, list_block.binding.local_variable_get(variable)]
+            end)
   end
 
   # Adds #h method globally, delegating to SimpleHash::h

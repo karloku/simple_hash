@@ -7,7 +7,7 @@ require 'time'
 Gem::Specification.new do |gem|
   gem.name        = 'simple_hash'
   gem.version     = SimpleHash::VERSION
-  gem.date        = Time.parse `git log -1 --format=%cd`
+  gem.date        = Time.parse(`git log -1 --format=%cd`).utc
   gem.summary     = 'Ruby short cut for making hash'
   gem.description = 'Ruby short cut for making hash'
   gem.homepage    = 'https://github.com/karloku/simple_hash'

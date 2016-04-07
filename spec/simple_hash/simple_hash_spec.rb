@@ -4,7 +4,7 @@ describe SimpleHash do
     it 'builds hash' do
       a = 1
       b = 2
-      expect(SimpleHash {[:a, :b]}).to eq(a: a, b: b)
+      expect(SimpleHash{[:a, :b]}).to eq(a: a, b: b)
     end
   end
 
