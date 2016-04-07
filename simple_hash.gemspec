@@ -16,7 +16,6 @@ Gem::Specification.new do |gem|
   gem.required_ruby_version = '>= 2.1.0' # bc optional keyword args
 
   gem.require_paths = ['lib']
-  gem.files         = Dir['{lib}/**/*', 'MIT-LICENSE', 'README.md']
   gem.files         = `git ls-files`.split("\n")
   gem.test_files    = `git ls-files -- {spec}/*`.split("\n")
 
