@@ -14,7 +14,7 @@ Gem::Specification.new do |gem|
   gem.authors     = ['Karloku Sang']
   gem.email       = ['karloku@gmail.com']
   gem.license     = 'MIT'
-  gem.required_ruby_version = '>= 2.1.0' # bc optional keyword args
+  gem.required_ruby_version = '>= 2.1.0'
 
   gem.require_paths = ['lib']
   gem.files         = `git ls-files`.split("\n")
